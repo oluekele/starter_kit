@@ -34,3 +34,39 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# 🔐 Full Auth Starter Kit
+
+A production-ready authentication starter built with:
+
+- **Next.js App Router**
+- **Node.js + Express**
+- **MongoDB**
+- **Tailwind CSS**
+- **JWT + Email OTP**
+
+## ✨ Features
+
+- Sign up & login with email
+- OTP verification system
+- JWT-based authentication
+- Protected routes
+- Role-ready architecture
+- Fully styled with Tailwind CSS
+- Mobile-responsive layout
+- Dark/light theme toggle
+- Sidebar & dashboard layout
+
+## 🔧 Tech Stack
+
+- **Frontend:** Next.js 14 (App Router)
+- **Backend:** Node.js + Express
+- **Database:** MongoDB + Mongoose
+- **Auth:** JWT + Email OTP
+- **Styling:** Tailwind CSS
+- **UI:** Framer Motion + Lucide Icons
+
+## 🛠️ Getting Started
+
+
