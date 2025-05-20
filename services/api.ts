@@ -1,5 +1,5 @@
 export const loginUser = async (payload: { email: string; password: string }) => {
-  const res = await fetch('http://localhost:5000/api/auth/login', {
+  const res = await fetch('https://starter-kit-backend-fjf7.onrender.com/api/auth/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
@@ -15,7 +15,7 @@ export const signupUser = async (payload: {
   email: string;
   password: string;
 }) => {
-  const res = await fetch('http://localhost:5000/api/auth/signup', {
+  const res = await fetch('https://starter-kit-backend-fjf7.onrender.com/api/auth/signup', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
@@ -30,7 +30,7 @@ export const signupUser = async (payload: {
 
 
 export const verifyOtp = async (email: string, otp: string) => {
-  const res = await fetch('http://localhost:5000/api/auth/verify-otp', {
+  const res = await fetch('https://starter-kit-backend-fjf7.onrender.com/api/auth/verify-otp', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, otp }),
@@ -41,7 +41,7 @@ export const verifyOtp = async (email: string, otp: string) => {
 };
 
 export const forgotPassword = async (email: string) => {
-  const res = await fetch('http://localhost:5000/api/auth/forgot-password', {
+  const res = await fetch('https://starter-kit-backend-fjf7.onrender.com/api/auth/forgot-password', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email }),
@@ -52,7 +52,7 @@ export const forgotPassword = async (email: string) => {
 };
 
 export const resetPassword = async (email: string, newPassword: string) => {
-  const res = await fetch('http://localhost:5000/api/auth/reset-password', {
+  const res = await fetch('https://starter-kit-backend-fjf7.onrender.com/api/auth/reset-password', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, newPassword }),
