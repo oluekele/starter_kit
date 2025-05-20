@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { forgotPassword } from '@/services/api';
 import PageWrapper from '@/components/PageWrapper';
 import { useRouter } from 'next/navigation';
+import LoadingSpinner from '@/components/LoadingSpinner';
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
@@ -45,7 +46,7 @@ export default function ForgotPasswordPage() {
             disabled={loading}
             className="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
           >
-            {loading ? 'Sending OTP...' : 'Send OTP'}
+            {loading ? <LoadingSpinner /> : 'Send OTP'}
           </button>
         </form>
       </div>

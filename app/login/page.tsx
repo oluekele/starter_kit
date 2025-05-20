@@ -34,12 +34,12 @@ export default function LoginPage() {
 
   return (
     <PageWrapper>
-      <div className="min-h-screen flex justify-center items-center bg-gray-50 dark:bg-zinc-900 transition-colors">
-        <form onSubmit={handleLogin} className="bg-white dark:bg-zinc-400 p-8 rounded-xl shadow-md w-full max-w-md space-y-4">
-          <h1 className="text-2xl font-semibold text-center">Login</h1>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-zinc-900 px-4">
+        <form onSubmit={handleLogin} className="bg-white dark:bg-zinc-800 p-8 rounded-lg shadow-md w-full max-w-md space-y-4">
+          <h1 className="text-xl font-semibold text-center">Login</h1>
           <input
             type="email"
-            className="w-full p-3 rounded border  dark:border-zinc-600"
+            className="w-full p-3 rounded border dark:bg-zinc-700 dark:border-zinc-600"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -47,7 +47,7 @@ export default function LoginPage() {
           />
           <input
             type="password"
-            className="w-full p-3 rounded border bg-white dark:border-zinc-600"
+            className="w-full p-3 rounded border dark:bg-zinc-700 dark:border-zinc-600"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -64,7 +64,7 @@ export default function LoginPage() {
             Don’t have an account?{' '}
             <Link href="/signup" className="text-blue-600 hover:underline">Sign Up</Link>
           </p>
-          <p className="text-sm text-center text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-center ">
             <Link href="/forgot-password" className="text-red-500 hover:underline">Forgot Password?</Link>
           </p>
         </form>

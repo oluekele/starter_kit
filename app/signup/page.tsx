@@ -6,6 +6,7 @@ import { signupUser } from '@/services/api';
 import PageWrapper from '@/components/PageWrapper';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
+import LoadingSpinner from '@/components/LoadingSpinner';
 
 export default function SignupPage() {
   const [form, setForm] = useState({ firstname: '', lastname: '', email: '', password: '' });
@@ -63,7 +64,7 @@ export default function SignupPage() {
             className="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
             disabled={loading}
           >
-            {loading ? 'Signing up...' : 'Sign Up'}
+            { loading ? <LoadingSpinner /> : 'Sign Up'}
           </button>
           <p className="text-sm text-center text-gray-600 dark:text-gray-400">
             Already have an account?{' '}
