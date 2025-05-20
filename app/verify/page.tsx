@@ -1,11 +1,10 @@
-// app/(auth)/verify-otp/page.tsx
 import VerifyPageClient from '@/components/VerifyOTPForm';
 import { Suspense } from 'react';
 
 
-export default function Page() {
+export default function VerifyPageWrapper() {
   return (
-    <Suspense fallback={<p className="text-center py-10">Loading...</p>}>
+    <Suspense fallback={<div>Loading...</div>}>
       <VerifyPageClient />
     </Suspense>
   );
